@@ -1,10 +1,8 @@
 package com.lost.dystopiaworldgen;
 
 import com.lost.dystopiaworldgen.proxy.CommonProxy;
-import com.lost.dystopiaworldgen.world.WorldTypeSandyWasteland;
 
 import net.minecraft.item.Item;
-import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -20,6 +18,8 @@ public class DystopiaWorldGen {
 	public static final String MODID = "dystopiaworldgen";
 	public static final String NAME = "Dystopia World Gen";
 	public static final String VERSION = "1.0.0";
+	
+	public static final ModWorldTypes worldtypes = new ModWorldTypes();
 	
 	@Mod.Instance(MODID)
 	public static DystopiaWorldGen instance;
@@ -41,9 +41,6 @@ public class DystopiaWorldGen {
 	
 	@SidedProxy(serverSide = "com.lost.dystopiaworldgen.proxy.CommonProxy", clientSide = "com.lost.dystopiaworldgen.proxy.ClientProxy")
 	public static CommonProxy proxy;
-	
-	//custome world type, single biome uses SandyWasteland biome
-	public static final WorldType SinBioSandyWasteland = new WorldTypeSandyWasteland("sbsanwas");
 	
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler {
