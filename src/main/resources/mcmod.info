@@ -1,16 +1,16 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "dystopiaworldgen",
+  "name": "Dystopia World Gen",
+  "description": "Add world generators for dystopia type worlds",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
+  "authorList": ["Lostone1993"],
+  "credits": "Authors of this project, CleanroomMC",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["mod_MinecraftForge"]
 }
 ]
