@@ -9,20 +9,20 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBiomes {
 	
-	public static BiomeSandyWasteland sandy_wasteland = new BiomeSandyWasteland(new BiomeProperties("sandy_wasteland")
+	public static BiomeSandyWasteland sandy_wasteland = new BiomeSandyWasteland(new BiomeProperties("wastelandsand")
 			.setBaseHeight(0.125F)
 			.setHeightVariation(0.05F)
 			.setTemperature(2.0F)
 			.setRainfall(0.0F)
-			.setRainDisabled(), "sandy_wasteland");
+			.setRainDisabled(), "wastelandsand");
 	
-	public static BiomeSnowyWasteland snowy_wasteland = new BiomeSnowyWasteland(new BiomeProperties("snowy_wasteland")
+	public static BiomeSnowyWasteland snowy_wasteland = new BiomeSnowyWasteland(new BiomeProperties("wastelandsnow")
 			.setBaseHeight(0.45F)
 			.setHeightVariation(0.3F)
 			.setTemperature(0.0F)
 			.setRainfall(0.5F)
 			.setSnowEnabled(), 
-			"snowy_wasteland");
+			"wastelandsnow");
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		event.register(sandy_wasteland);
