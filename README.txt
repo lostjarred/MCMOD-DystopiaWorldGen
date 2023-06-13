@@ -7,3 +7,4 @@ It attempts to remove all vegetation and animals so you will need as a modpack d
 Shadowfacts - Tutorials - https://shadowfacts.net/tutorials/
 cubicoder - Tutorials - https://cubicoder.github.io/tutorials/1-12-2/tutorials/
 jabelar - Tutorials - https://jabelarminecraft.blogspot.com/p/minecraft-modding-custom-dimension.html
+CleanroomMC - https://github.com/CleanroomMC/TemplateDevEnv
