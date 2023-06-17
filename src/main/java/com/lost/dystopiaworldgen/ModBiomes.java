@@ -28,5 +28,6 @@ public class ModBiomes {
 		//single biome gen biomes
 		event.register(sandy_wasteland);
 		event.register(snowy_wasteland);
+		//multi Biomes
 	}
 }
