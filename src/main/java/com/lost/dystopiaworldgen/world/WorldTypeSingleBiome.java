@@ -1,6 +1,6 @@
 package com.lost.dystopiaworldgen.world;
 
-import com.lost.dystopiaworldgen.world.biome.BiomeProviderSingleDystopia;
+import com.lost.dystopiaworldgen.world.biome.single.BiomeProviderSingleDystopia;
 
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;

@@ -1,4 +1,4 @@
-package com.lost.dystopiaworldgen.world.biome;
+package com.lost.dystopiaworldgen.world.biome.single;
 
 import java.util.List;
 

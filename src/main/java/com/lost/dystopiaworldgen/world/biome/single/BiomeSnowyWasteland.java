@@ -1,4 +1,6 @@
-package com.lost.dystopiaworldgen.world.biome;
+package com.lost.dystopiaworldgen.world.biome.single;
+
+import com.lost.dystopiaworldgen.world.biome.BiomeBase;
 
 import net.minecraft.entity.monster.EntityStray;
 import net.minecraft.init.Blocks;

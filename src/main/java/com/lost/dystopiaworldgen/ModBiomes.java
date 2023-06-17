@@ -1,7 +1,7 @@
 package com.lost.dystopiaworldgen;
 
-import com.lost.dystopiaworldgen.world.biome.BiomeSandyWasteland;
-import com.lost.dystopiaworldgen.world.biome.BiomeSnowyWasteland;
+import com.lost.dystopiaworldgen.world.biome.single.BiomeSandyWasteland;
+import com.lost.dystopiaworldgen.world.biome.single.BiomeSnowyWasteland;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.BiomeProperties;
