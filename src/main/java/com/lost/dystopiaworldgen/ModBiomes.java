@@ -25,6 +25,7 @@ public class ModBiomes {
 			"wastelandsnow");
 	
 	public static void register(IForgeRegistry<Biome> event) {
+		//single biome gen biomes
 		event.register(sandy_wasteland);
 		event.register(snowy_wasteland);
 	}
