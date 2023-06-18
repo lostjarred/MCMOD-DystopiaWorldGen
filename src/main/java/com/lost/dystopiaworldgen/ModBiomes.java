@@ -27,7 +27,10 @@ public class ModBiomes {
 			"wastelandsnow");
 	
 	//MultiBiomes
-	public static BiomeWasteOcean waste_ocean = new BiomeWasteOcean(new BiomeProperties("Waste Ocean"), "wasteocean");
+	public static BiomeWasteOcean waste_ocean = new BiomeWasteOcean(new BiomeProperties("Waste Ocean")
+			.setBaseHeight(-1.0F)
+			.setHeightVariation(0.1F), 
+			"wasteocean");
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
