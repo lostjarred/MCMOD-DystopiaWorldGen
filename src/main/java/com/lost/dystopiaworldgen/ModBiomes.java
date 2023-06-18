@@ -9,6 +9,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBiomes {
 	
+	//Single Biomes
 	public static BiomeSandyWasteland sandy_wasteland = new BiomeSandyWasteland(new BiomeProperties("wastelandsand")
 			.setBaseHeight(0.125F)
 			.setHeightVariation(0.05F)
@@ -23,6 +24,9 @@ public class ModBiomes {
 			.setRainfall(0.5F)
 			.setSnowEnabled(), 
 			"wastelandsnow");
+	
+	//MultiBiomes
+	
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
