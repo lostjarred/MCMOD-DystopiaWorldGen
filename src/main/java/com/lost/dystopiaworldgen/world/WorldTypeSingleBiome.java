@@ -1,6 +1,7 @@
 package com.lost.dystopiaworldgen.world;
 
 import com.lost.dystopiaworldgen.world.biome.BiomeProviderSingleDystopia;
+import com.lost.dystopiaworldgen.world.gen.ChunkGeneratorDystopia;
 
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
@@ -14,6 +15,11 @@ public class WorldTypeSingleBiome extends WorldType {
 	public WorldTypeSingleBiome(String name, Biome biome) {
 		super(name);
 		this.worldbiome = biome;
+	}
+	
+	@Override
+	public net.minecraft.world.gen.IChunkGenerator getChunkGenerator(World world, String generatorOptions){
+		return new ChunkGeneratorDystopia(world, world.getSeed(), world.getWorldInfo().isMapFeaturesEnabled(), generatorOptions);
 	}
 	
 	@Override
