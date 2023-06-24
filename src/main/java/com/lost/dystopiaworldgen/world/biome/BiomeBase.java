@@ -1,6 +1,7 @@
 package com.lost.dystopiaworldgen.world.biome;
 
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeDecorator;
 
 public class BiomeBase extends Biome{
 
@@ -12,5 +13,8 @@ public class BiomeBase extends Biome{
 		this.spawnableWaterCreatureList.clear();
 		this.setRegistryName(name);
 	}
-
+	@Override
+	public BiomeDecorator createBiomeDecorator() {
+		return getModdedBiomeDecorator(new BiomeDecoratorDystopia());
+	}
 }
