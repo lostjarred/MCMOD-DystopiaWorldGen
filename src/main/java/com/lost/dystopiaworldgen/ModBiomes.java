@@ -85,6 +85,14 @@ public class ModBiomes {
 			.setHeightVariation(0.0F)
 			, "wasteriver");
 	
+	public static BiomeWasteOcean waste_frozen_ocean = new BiomeWasteOcean(new BiomeProperties("Waste Frozen Ocean")
+			.setBaseHeight(-1.0F)
+			.setHeightVariation(0.1F)
+			.setTemperature(0.0F)
+			.setRainfall(0.5F)
+			.setSnowEnabled()
+			,"wastefrozenocean");
+	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
 		event.register(sandy_wasteland);
