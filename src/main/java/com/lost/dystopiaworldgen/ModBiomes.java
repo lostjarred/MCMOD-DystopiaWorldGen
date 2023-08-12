@@ -6,6 +6,7 @@ import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteHills;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteOcean;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWastePlains;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteRiver;
+import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteSnow;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteSwamp;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteTaiga;
 import com.lost.dystopiaworldgen.world.biome.single.BiomeSandyWasteland;
@@ -100,6 +101,14 @@ public class ModBiomes {
 			.setRainfall(0.5F)
 			.setSnowEnabled()
 			, "wastefrozenriver");
+	
+	public static BiomeWasteSnow waste_ice_flats = new BiomeWasteSnow(new BiomeProperties("Waste Ice Flats") 
+			.setBaseHeight(0.125F)
+			.setHeightVariation(0.05F)
+			.setTemperature(0.0F)
+			.setRainfall(0.5F)
+			.setSnowEnabled()
+			, "wasteiceflats");
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
