@@ -110,6 +110,14 @@ public class ModBiomes {
 			.setSnowEnabled()
 			, "wasteiceflats");
 	
+	public static BiomeWasteSnow waste_ice_mountains = new BiomeWasteSnow(new BiomeProperties("Waste Ice mountin")
+			.setBaseHeight(0.45F)
+			.setHeightVariation(0.3F)
+			.setTemperature(0.0F)
+			.setRainfall(0.5F)
+			.setSnowEnabled()
+			, "wasteicemountains");
+	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
 		event.register(sandy_wasteland);
