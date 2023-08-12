@@ -1,5 +1,6 @@
 package com.lost.dystopiaworldgen;
 
+import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteBeach;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteDesert;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteForrest;
 import com.lost.dystopiaworldgen.world.biome.multi.BiomeWasteHills;
@@ -117,6 +118,13 @@ public class ModBiomes {
 			.setRainfall(0.5F)
 			.setSnowEnabled()
 			, "wasteicemountains");
+	
+	public static BiomeWasteBeach waste_beaches = new BiomeWasteBeach(new BiomeProperties("Waste Beach")
+			.setBaseHeight(0.0F)
+			.setHeightVariation(0.025F)
+			.setTemperature(0.8F)
+			.setRainfall(0.4F)
+			,"wastebeach");
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
