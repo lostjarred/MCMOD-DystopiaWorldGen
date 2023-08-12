@@ -126,6 +126,14 @@ public class ModBiomes {
 			.setRainfall(0.4F)
 			,"wastebeach");
 	
+	public static BiomeWasteDesert waste_desert_hills = new BiomeWasteDesert(new BiomeProperties("Waste Desert Hills")
+			.setBaseHeight(0.45F)
+			.setHeightVariation(0.3F)
+			.setTemperature(2.0F)
+			.setRainfall(0.0F)
+			.setRainDisabled()
+			, "wastedeserthillss");
+	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
 		event.register(sandy_wasteland);
