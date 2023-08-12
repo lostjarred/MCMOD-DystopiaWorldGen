@@ -91,7 +91,15 @@ public class ModBiomes {
 			.setTemperature(0.0F)
 			.setRainfall(0.5F)
 			.setSnowEnabled()
-			,"wastefrozenocean");
+			, "wastefrozenocean");
+	
+	public static BiomeWasteRiver waste_frozen_river = new BiomeWasteRiver(new BiomeProperties("Waste Frozen River")
+			.setBaseHeight(-0.5F)
+			.setHeightVariation(0.0F)
+			.setTemperature(0.0F)
+			.setRainfall(0.5F)
+			.setSnowEnabled()
+			, "wastefrozenriver");
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		//single biome gen biomes
