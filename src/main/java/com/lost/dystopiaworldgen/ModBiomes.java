@@ -5,6 +5,10 @@ import com.lost.dystopiaworldgen.world.biome.BiomeSnowyWasteland;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.BiomeProperties;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeEntry;
+import net.minecraftforge.common.BiomeManager.BiomeType;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBiomes {
@@ -27,5 +31,13 @@ public class ModBiomes {
 	public static void register(IForgeRegistry<Biome> event) {
 		event.register(sandy_wasteland);
 		event.register(snowy_wasteland);
+	}
+	
+	public static void initBiomeManagerDictionary() {
+		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland, 0));
+		BiomeManager.addSpawnBiome(sandy_wasteland);
+		BiomeManager.addStrongholdBiome(sandy_wasteland);
+		BiomeManager.addVillageBiome(sandy_wasteland, false);
+		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.DRY);
 	}
 }

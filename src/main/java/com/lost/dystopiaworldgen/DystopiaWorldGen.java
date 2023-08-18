@@ -31,7 +31,7 @@ public class DystopiaWorldGen {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		ModBiomes.initBiomeManagerDictionary();
 	}
 	
 	@Mod.EventHandler
