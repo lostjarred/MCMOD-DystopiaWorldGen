@@ -1,6 +1,5 @@
 package com.lost.dystopiaworldgen.world;
 
-import com.lost.dystopiaworldgen.world.biome.BiomeProviderSingleDystopia;
 import com.lost.dystopiaworldgen.world.gen.ChunkGeneratorDystopia;
 
 import net.minecraft.world.World;
@@ -24,6 +23,6 @@ public class WorldTypeSingleBiome extends WorldType {
 	
 	@Override
 	public net.minecraft.world.biome.BiomeProvider getBiomeProvider(World world){
-		return new BiomeProviderSingleDystopia(worldbiome);
+		return new BiomeProviderSingle(worldbiome);
 	}
 }
