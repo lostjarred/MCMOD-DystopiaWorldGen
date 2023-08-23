@@ -46,5 +46,7 @@ public class ModBiomes {
 		BiomeManager.addSpawnBiome(snowy_wasteland);
 		BiomeManager.addStrongholdBiome(snowy_wasteland);
 		BiomeManager.addVillageBiome(snowy_wasteland, false);
+		BiomeDictionary.addTypes(snowy_wasteland, BiomeDictionary.Type.SNOWY);
+		BiomeDictionary.addTypes(snowy_wasteland, BiomeDictionary.Type.COLD);
 	}
 }
