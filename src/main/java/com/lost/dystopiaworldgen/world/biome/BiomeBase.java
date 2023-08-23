@@ -13,6 +13,7 @@ public class BiomeBase extends Biome{
 		this.spawnableWaterCreatureList.clear();
 		this.setRegistryName(name);
 		this.decorator.cactiPerChunk=0;
+		this.decorator.extraTreeChance=0f;
 	}
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
