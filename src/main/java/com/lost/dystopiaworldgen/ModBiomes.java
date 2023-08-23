@@ -34,10 +34,17 @@ public class ModBiomes {
 	}
 	
 	public static void initBiomeManagerDictionary() {
+		//Sandy Wasteland
 		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland, 0));
 		BiomeManager.addSpawnBiome(sandy_wasteland);
 		BiomeManager.addStrongholdBiome(sandy_wasteland);
 		BiomeManager.addVillageBiome(sandy_wasteland, false);
 		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.DRY);
+		
+		//Snowy Wasteland
+		BiomeManager.addBiome(BiomeType.ICY, new BiomeEntry(snowy_wasteland, 0));
+		BiomeManager.addSpawnBiome(snowy_wasteland);
+		BiomeManager.addStrongholdBiome(snowy_wasteland);
+		BiomeManager.addVillageBiome(snowy_wasteland, false);
 	}
 }
