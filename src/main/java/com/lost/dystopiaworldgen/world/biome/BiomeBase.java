@@ -14,6 +14,7 @@ public class BiomeBase extends Biome{
 		this.setRegistryName(name);
 		this.decorator.cactiPerChunk=0;
 		this.decorator.extraTreeChance=0f;
+		this.decorator.flowersPerChunk=0;
 	}
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
