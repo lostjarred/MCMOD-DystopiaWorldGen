@@ -12,6 +12,7 @@ public class BiomeBase extends Biome{
 		this.spawnableCaveCreatureList.clear();
 		this.spawnableWaterCreatureList.clear();
 		this.setRegistryName(name);
+		this.decorator.cactiPerChunk=0;
 	}
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
