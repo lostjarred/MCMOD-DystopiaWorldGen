@@ -18,6 +18,7 @@ public class BiomeBase extends Biome{
 		this.decorator.grassPerChunk=0;
 		this.decorator.reedsPerChunk=0;
 		this.decorator.treesPerChunk=0;
+		this.decorator.waterlilyPerChunk=0;
 	}
 	@Override
 	public BiomeDecorator createBiomeDecorator() {
