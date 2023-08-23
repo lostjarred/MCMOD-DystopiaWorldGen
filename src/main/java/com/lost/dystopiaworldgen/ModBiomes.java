@@ -40,6 +40,8 @@ public class ModBiomes {
 		BiomeManager.addStrongholdBiome(sandy_wasteland);
 		BiomeManager.addVillageBiome(sandy_wasteland, false);
 		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.DRY);
+		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.HOT);
+		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.SANDY);
 		
 		//Snowy Wasteland
 		BiomeManager.addBiome(BiomeType.ICY, new BiomeEntry(snowy_wasteland, 0));
