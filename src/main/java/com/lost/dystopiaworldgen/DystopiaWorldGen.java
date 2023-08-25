@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -21,12 +22,17 @@ public class DystopiaWorldGen {
 	
 	public static final ModWorldTypes worldtypes = new ModWorldTypes();
 	
+	static {
+		FluidRegistry.enableUniversalBucket();
+	}
+	
 	@Mod.Instance(MODID)
 	public static DystopiaWorldGen instance;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(NAME + " is loading!");
+		ModFluids.register();
 	}
 	
 	@Mod.EventHandler
