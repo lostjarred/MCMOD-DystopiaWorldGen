@@ -29,11 +29,13 @@ public class ModBiomes {
 			"wastelandsnow");
 	
 	public static void register(IForgeRegistry<Biome> event) {
+		System.out.println("Registering Biomes");
 		event.register(sandy_wasteland);
 		event.register(snowy_wasteland);
 	}
 	
 	public static void initBiomeManagerDictionary() {
+		System.out.println("Adding biomes to biome manager and biome dictionary");
 		//Sandy Wasteland
 		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland, 0));
 		BiomeManager.addSpawnBiome(sandy_wasteland);
