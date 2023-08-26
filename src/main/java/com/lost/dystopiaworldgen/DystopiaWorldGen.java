@@ -2,6 +2,7 @@ package com.lost.dystopiaworldgen;
 
 import com.lost.dystopiaworldgen.proxy.CommonProxy;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -52,10 +53,17 @@ public class DystopiaWorldGen {
 	public static class RegistrationHandler {
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
+			ModBlocks.registeritemblock(event.getRegistry());
+		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(RegistryEvent.Register<Block> event) {
+			ModBlocks.register(event.getRegistry());
 		}
 		
 		@SubscribeEvent
 		public static void registerItems(ModelRegistryEvent event) {
+			ModBlocks.registermodels();
 		}
 		
 		@SubscribeEvent

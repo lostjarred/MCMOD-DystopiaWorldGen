@@ -13,4 +13,8 @@ public class ModFluid extends Fluid {
 	public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, Color color){
 		super(fluidName, still, flowing, color);
 	}
+	
+	public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, int color){
+		super(fluidName, still, flowing, color);
+	}
 }

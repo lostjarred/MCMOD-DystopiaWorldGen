@@ -6,16 +6,16 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidRegistry;
 
 public class ModFluids {
-	public static ModFluid contaimnated_water = new ModFluid(
-			"containmentedwater", 
-			new ResourceLocation("minecraft", "water_still"), 
-			new ResourceLocation("minecraft", "water_flow") 
+	public static ModFluid contaminated_water = new ModFluid(
+			"conwater", 
+			new ResourceLocation("dystopiaworldgen", "blocks/conwater_still"), 
+			new ResourceLocation("dystopiaworldgen", "blocks/conwater_flow")
 			);
 	
 	public static void register() {
 		System.out.println("Registering Fluids");
-		FluidRegistry.registerFluid(contaimnated_water);
+		FluidRegistry.registerFluid(contaminated_water);
 		System.out.println("Adding bucket for Fluids");
-		FluidRegistry.addBucketForFluid(contaimnated_water);
+		FluidRegistry.addBucketForFluid(contaminated_water);
 	}
 }
