@@ -8,7 +8,7 @@ import net.minecraft.world.gen.layer.IntCache;
 
 public class GenLayerBiomeCustom extends GenLayer 
 {
-	private Biome[] allowedBiomes = {ModBiomes.sandy_wasteland, ModBiomes.snowy_wasteland};
+	private Biome[] allowedBiomes = {ModBiomes.sandy_wasteland, ModBiomes.glass_wasteland};
 	public GenLayerBiomeCustom(long seed) {
 		super(seed);
 	}
