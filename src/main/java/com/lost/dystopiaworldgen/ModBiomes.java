@@ -41,11 +41,22 @@ public class ModBiomes {
 				.setRainDisabled()
 			, "wastelandglass");
 	
+	public static BiomeSandyWasteland sandy_wasteland_hills = new BiomeSandyWasteland(
+			new BiomeProperties("wastelandsandhills")
+			.setBaseHeight(0.45F)
+			.setHeightVariation(0.3F)
+			.setTemperature(2.0F)
+			.setRainfall(0.0F)
+			.setRainDisabled()
+			, "wastelandsandhills");
+	
+	
 	public static void register(IForgeRegistry<Biome> event) {
 		System.out.println("Registering Biomes");
 		event.register(sandy_wasteland);
 		event.register(snowy_wasteland);
 		event.register(glass_wasteland);
+		event.register(sandy_wasteland_hills);
 	}
 	
 	public static void initBiomeManagerDictionary() {
@@ -75,5 +86,14 @@ public class ModBiomes {
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.DRY);
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.HOT);
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.SANDY);
+		
+		//sandywasteland hills
+		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland_hills, 0));
+		BiomeManager.addSpawnBiome(sandy_wasteland_hills);
+		BiomeManager.addStrongholdBiome(sandy_wasteland_hills);
+		BiomeManager.addVillageBiome(sandy_wasteland_hills, false);
+		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.DRY);
+		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.HOT);
+		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.SANDY);
 	}
 }
