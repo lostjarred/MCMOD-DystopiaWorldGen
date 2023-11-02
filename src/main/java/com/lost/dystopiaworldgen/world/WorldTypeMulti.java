@@ -1,6 +1,6 @@
 package com.lost.dystopiaworldgen.world;
 
-import com.lost.dystopiaworldgen.world.genlayer.GenLayerBiomeCustom;
+import com.lost.dystopiaworldgen.world.gen.layer.GenLayerBiomeCustom;
 
 import net.minecraft.world.WorldType;
 import net.minecraft.world.gen.ChunkGeneratorSettings;

@@ -1,4 +1,4 @@
-package com.lost.dystopiaworldgen.world.genlayer;
+package com.lost.dystopiaworldgen.world.gen.layer;
 
 import com.lost.dystopiaworldgen.ModBiomes;
 
