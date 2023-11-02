@@ -1,17 +1,34 @@
 package com.lost.dystopiaworldgen;
 
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber(modid = DystopiaWorldGen.MODID)
 public class EventHandler {
 	
 	@SubscribeEvent
 	public static void onEvent(Populate event) {
-		if (event.getType() == Populate.EventType.LAKE) {
-			System.out.println("a lake has just generate and I have detected it !");
-		}
+			System.out.println("a populate event has occured and I have found it");
 	}
+	
+
+	//from https://jabelarminecraft.blogspot.com/p/minecraft-forge-172-event-handling.html
+	@SubscribeEvent(priority=EventPriority.HIGHEST, receiveCanceled=true)
+	public static void onEvent(LivingJumpEvent event)
+	{
+	    // DEBUG
+	    if (event.getEntity() instanceof EntityPlayer)
+	    {
+	        System.out.println("Boing");
+	    }
+	        
+	}
+
+
 	
 }
