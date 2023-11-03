@@ -13,8 +13,9 @@ public class EventHandlerTerrain {
 			if (event.getType() == PopulateChunkEvent.Populate.EventType.LAKE) {
 				int blockposx = event.getChunkX() * 16;
 				int blockposz = event.getChunkZ() * 16;
-				System.out.println(">>>> a lake generation event has occured and I have found it " + blockposx + " " + blockposz);
-				ModWorldGen.LAKE_CONTAINMENTEDWATER.generate(event.getWorld(), event.getRand(), new BlockPos( (event.getChunkX() * 16), 0, (event.getChunkZ() * 16) ) );
+				int blockposy = 90;
+				System.out.println(">>>> a lake generation event has occured and I have found it " + blockposx + " " + blockposy + " "+ blockposz);
+				ModWorldGen.LAKE_CONTAINMENTEDWATER.generate(event.getWorld(), event.getRand(), new BlockPos( blockposx, 90, blockposz ) );
 				event.setResult(Event.Result.DENY);
 			}
 		}
