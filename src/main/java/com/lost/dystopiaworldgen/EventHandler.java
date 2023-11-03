@@ -13,9 +13,8 @@ public class EventHandler {
 	
 	@SubscribeEvent
 	public static void onEvent(PopulateChunkEvent event) {
-			System.out.println("a populate event has occured and I have found it");
+			System.out.println("a chunk populate event has occured and I have found it");
 	}
-	
 
 	//from https://jabelarminecraft.blogspot.com/p/minecraft-forge-172-event-handling.html
 	@SubscribeEvent(priority=EventPriority.HIGHEST, receiveCanceled=true)
