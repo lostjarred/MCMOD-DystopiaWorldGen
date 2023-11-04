@@ -3,6 +3,7 @@ package com.lost.dystopiaworldgen;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
+import net.minecraftforge.event.terraingen.WorldTypeEvent;
 import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -21,4 +22,9 @@ public class EventHandlerTerrain {
 			}
 		}
 	}
+	
+	@SubscribeEvent
+	public void onevent(WorldTypeEvent.InitBiomeGens event) {
+	}
+	
 }
