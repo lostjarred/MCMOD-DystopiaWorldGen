@@ -1,5 +1,7 @@
 package com.lost.dystopiaworldgen;
 
+import com.lost.dystopiaworldgen.world.gen.layer.GenLayerCustom;
+
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
@@ -25,6 +27,9 @@ public class EventHandlerTerrain {
 	
 	@SubscribeEvent
 	public void onevent(WorldTypeEvent.InitBiomeGens event) {
+		if (event.getWorldType() == ModWorldTypes.MulBioSandyWasteland) {
+			event.setNewBiomeGens(GenLayerCustom.initializeAllBiomeGenerators(event.getSeed(), event.getWorldType(), null));
+		}
 	}
 	
 }
