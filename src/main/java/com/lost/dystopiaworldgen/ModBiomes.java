@@ -1,5 +1,6 @@
 package com.lost.dystopiaworldgen;
 
+import com.lost.dystopiaworldgen.world.biome.BiomeRiverWasteland;
 import com.lost.dystopiaworldgen.world.biome.BiomeSandyGlassWasteland;
 import com.lost.dystopiaworldgen.world.biome.BiomeSandyWasteland;
 import com.lost.dystopiaworldgen.world.biome.BiomeSnowyWasteland;
@@ -50,6 +51,12 @@ public class ModBiomes {
 			.setRainDisabled()
 			, "wastelandsandhills");
 	
+	public static BiomeRiverWasteland river_wasteland = new BiomeRiverWasteland(
+			new BiomeProperties("wastelandriver")
+			.setBaseHeight(-0.5F)
+			.setHeightVariation(0.0F)
+			,"wastelandriver");
+	
 	
 	public static void register(IForgeRegistry<Biome> event) {
 		System.out.println("Registering Biomes");
@@ -57,6 +64,7 @@ public class ModBiomes {
 		event.register(snowy_wasteland);
 		event.register(glass_wasteland);
 		event.register(sandy_wasteland_hills);
+		event.register(river_wasteland);
 	}
 	
 	public static void initBiomeManagerDictionary() {
@@ -95,5 +103,8 @@ public class ModBiomes {
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.DRY);
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.HOT);
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.SANDY);
+		
+		//river
+		BiomeManager.addVillageBiome(river_wasteland, false);
 	}
 }
