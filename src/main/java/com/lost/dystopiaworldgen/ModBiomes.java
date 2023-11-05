@@ -73,7 +73,7 @@ public class ModBiomes {
 		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland, 0));
 		BiomeManager.addSpawnBiome(sandy_wasteland);
 		BiomeManager.addStrongholdBiome(sandy_wasteland);
-		BiomeManager.addVillageBiome(sandy_wasteland, false);
+		BiomeManager.removeVillageBiome(sandy_wasteland);
 		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.DRY);
 		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.HOT);
 		BiomeDictionary.addTypes(sandy_wasteland, BiomeDictionary.Type.SANDY);
@@ -82,7 +82,7 @@ public class ModBiomes {
 		BiomeManager.addBiome(BiomeType.ICY, new BiomeEntry(snowy_wasteland, 0));
 		BiomeManager.addSpawnBiome(snowy_wasteland);
 		BiomeManager.addStrongholdBiome(snowy_wasteland);
-		BiomeManager.addVillageBiome(snowy_wasteland, false);
+		BiomeManager.removeVillageBiome(snowy_wasteland);
 		BiomeDictionary.addTypes(snowy_wasteland, BiomeDictionary.Type.SNOWY);
 		BiomeDictionary.addTypes(snowy_wasteland, BiomeDictionary.Type.COLD);
 		
@@ -90,7 +90,7 @@ public class ModBiomes {
 		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(glass_wasteland, 0));
 		BiomeManager.addSpawnBiome(glass_wasteland);
 		BiomeManager.addStrongholdBiome(glass_wasteland);
-		BiomeManager.addVillageBiome(glass_wasteland, false);
+		BiomeManager.removeVillageBiome(glass_wasteland);
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.DRY);
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.HOT);
 		BiomeDictionary.addTypes(glass_wasteland, BiomeDictionary.Type.SANDY);
@@ -99,12 +99,12 @@ public class ModBiomes {
 		BiomeManager.addBiome(BiomeType.DESERT, new BiomeEntry(sandy_wasteland_hills, 0));
 		BiomeManager.addSpawnBiome(sandy_wasteland_hills);
 		BiomeManager.addStrongholdBiome(sandy_wasteland_hills);
-		BiomeManager.addVillageBiome(sandy_wasteland_hills, false);
+		BiomeManager.removeVillageBiome(sandy_wasteland_hills);
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.DRY);
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.HOT);
 		BiomeDictionary.addTypes(sandy_wasteland_hills, BiomeDictionary.Type.SANDY);
 		
 		//river
-		BiomeManager.addVillageBiome(river_wasteland, false);
+		BiomeManager.removeVillageBiome(river_wasteland);
 	}
 }
