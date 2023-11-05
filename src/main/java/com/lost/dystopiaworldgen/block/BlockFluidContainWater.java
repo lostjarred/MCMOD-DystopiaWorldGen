@@ -22,7 +22,7 @@ public class BlockFluidContainWater extends BlockFluidCustom {
 	public void onEntityCollision(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
 		if (entityIn instanceof EntityLivingBase) {
 			entityIn.attackEntityFrom(DamageSource.CACTUS, 1.0f);
-			( (EntityLivingBase) entityIn ).addPotionEffect( new PotionEffect(MobEffects.POISON) );
+			( (EntityLivingBase) entityIn ).addPotionEffect( new PotionEffect(MobEffects.POISON, 60) );
 		}
 	}
 }
