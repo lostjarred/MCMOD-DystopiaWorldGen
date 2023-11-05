@@ -9,9 +9,9 @@ import net.minecraft.world.gen.layer.IntCache;
 
 public class GenLayerRiverCustom extends GenLayer {
 
-	public GenLayerRiverCustom(long p_i2125_1_) {
-		super(p_i2125_1_);
-		// TODO Auto-generated constructor stub
+	public GenLayerRiverCustom(long p_i2128_1_, GenLayer p_i2128_3_) {
+		super(p_i2128_1_);
+        super.parent = p_i2128_3_;
 	}
 
 	 public int[] getInts(int areaX, int areaY, int areaWidth, int areaHeight)
