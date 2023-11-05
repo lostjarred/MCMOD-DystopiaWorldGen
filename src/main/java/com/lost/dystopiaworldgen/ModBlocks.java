@@ -1,5 +1,6 @@
 package com.lost.dystopiaworldgen;
 
+import com.lost.dystopiaworldgen.block.BlockFluidContainWater;
 import com.lost.dystopiaworldgen.block.BlockFluidCustom;
 
 import net.minecraft.block.Block;
@@ -8,7 +9,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
 	
-	public static BlockFluidCustom containmentedwaterfluidblock = new BlockFluidCustom(ModFluids.contaminated_water, ModMaterials.Containainedwater);
+	public static BlockFluidContainWater containmentedwaterfluidblock = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		System.out.println("Registering Blocks");
