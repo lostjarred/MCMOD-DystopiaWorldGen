@@ -80,7 +80,7 @@ public class GenLayerCustom {
         }
 
         GenLayer genlayersmooth1 = new GenLayerSmooth(1000L, genlayerhills);
-        GenLayer genlayerrivermix = new GenLayerRiverMix(100L, genlayersmooth1, genlayersmooth);
+        GenLayer genlayerrivermix = new GenLayerRiverMixCustom(100L, genlayersmooth1, genlayersmooth);
         GenLayer genlayer3 = new GenLayerVoronoiZoom(10L, genlayerrivermix);
         genlayerrivermix.initWorldGenSeed(seed);
         genlayer3.initWorldGenSeed(seed);
