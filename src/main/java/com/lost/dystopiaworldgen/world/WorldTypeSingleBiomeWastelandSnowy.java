@@ -7,5 +7,9 @@ public class WorldTypeSingleBiomeWastelandSnowy extends WorldTypeSingleBiome {
 	public WorldTypeSingleBiomeWastelandSnowy(String name) {
 		super(name, ModBiomes.snowy_wasteland);
 	}
-
+	
+	@Override
+	public boolean canBeCreated() {
+		return false;
+	}
 }
