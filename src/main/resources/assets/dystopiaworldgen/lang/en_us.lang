@@ -1,3 +1,7 @@
 #worldgen
+#single Biome
 generator.sbsanwas=Sand Wasteland
 generator.sbsnowas=Snow Wasteland
+#multi biome
+generator.mbsanwas=Snow Wasteland
+generator.mbsnowas=Snow Wasteland
