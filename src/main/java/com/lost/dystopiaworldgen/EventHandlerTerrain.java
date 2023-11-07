@@ -13,7 +13,7 @@ public class EventHandlerTerrain {
 	@SubscribeEvent
 	public void onEvent(PopulateChunkEvent.Populate event) {
 		//System.out.println(">>>> a populate event has occured and I have found it");
-		if (event.getWorld().getWorldType() == ModWorldTypes.MulBioSandyWasteland) {
+		if (event.getWorld().getWorldType() == ModWorldTypes.MulBioSandyWasteland || event.getWorld().getWorldType() == ModWorldTypes.MulBioSnowWasteland) {
 			if (event.getType() == PopulateChunkEvent.Populate.EventType.LAKE) {
 				int blockposx = (event.getChunkX() * 16) + 8;
 				int blockposz = (event.getChunkZ() * 16) + 8;
@@ -27,7 +27,7 @@ public class EventHandlerTerrain {
 	
 	@SubscribeEvent
 	public void onevent(WorldTypeEvent.InitBiomeGens event) {
-		if (event.getWorldType() == ModWorldTypes.MulBioSandyWasteland) {
+		if (event.getWorldType() == ModWorldTypes.MulBioSandyWasteland || event.getWorldType() == ModWorldTypes.MulBioSnowWasteland) {
 			event.setNewBiomeGens(GenLayerCustom.initializeAllBiomeGenerators(event.getSeed(), event.getWorldType(), null));
 		}
 	}

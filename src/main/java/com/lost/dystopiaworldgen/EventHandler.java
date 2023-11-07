@@ -13,7 +13,7 @@ public class EventHandler {
 	
 	@SubscribeEvent
 	public static void onEvent(PopulateChunkEvent event) {
-		if (event.getWorld().getWorldType() == ModWorldTypes.MulBioSandyWasteland) {
+		if (event.getWorld().getWorldType() == ModWorldTypes.MulBioSandyWasteland || event.getWorld().getWorldType() == ModWorldTypes.MulBioSnowWasteland) {
 			Chunk pchunk = event.getWorld().getChunk(event.getChunkX(), event.getChunkZ());
 			for (int x = 0; x < 16; x++) {
 				for (int z = 0; z < 16; z++) {
