@@ -1,10 +1,10 @@
 package com.lost.dystopiaworldgen.world;
 
-import net.minecraft.world.biome.Biome;
+import com.lost.dystopiaworldgen.ModBiomes;
 
 public class WorldTypeSingleBiomeWastelandSandy extends WorldTypeSingleBiome {
 
-	public WorldTypeSingleBiomeWastelandSandy(String name, Biome biome) {
-		super(name, biome);
+	public WorldTypeSingleBiomeWastelandSandy(String name) {
+		super(name, ModBiomes.sandy_wasteland);
 	}
 }

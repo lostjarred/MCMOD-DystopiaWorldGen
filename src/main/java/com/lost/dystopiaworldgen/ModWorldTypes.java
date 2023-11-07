@@ -10,8 +10,8 @@ import net.minecraft.world.WorldType;
 
 public class ModWorldTypes {
 	//single biome World Types
-		public static final WorldType SinBioSandyWasteland = new WorldTypeSingleBiomeWastelandSandy("sbsanwas", ModBiomes.sandy_wasteland);
-		public static final WorldType SinBioSnowyWasteland = new WorldTypeSingleBiomeWastelandSnowy("sbsnowas", ModBiomes.snowy_wasteland);
+		public static final WorldType SinBioSandyWasteland = new WorldTypeSingleBiomeWastelandSandy("sbsanwas");
+		public static final WorldType SinBioSnowyWasteland = new WorldTypeSingleBiomeWastelandSnowy("sbsnowas");
 	
 	//multi biome world types
 		public static final WorldType MulBioSandyWasteland = new WorldTypeMultiWastelandSandy("mbsanwas");
