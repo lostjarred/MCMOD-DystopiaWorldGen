@@ -1,6 +1,6 @@
 package com.lost.dystopiaworldgen;
 
-import com.lost.dystopiaworldgen.world.WorldTypeMulti;
+import com.lost.dystopiaworldgen.world.WorldTypeMultiWastelandSandy;
 import com.lost.dystopiaworldgen.world.WorldTypeSingleBiome;
 
 import net.minecraft.world.WorldType;
@@ -11,5 +11,5 @@ public class ModWorldTypes {
 	//single biome snowy wasteland
 	public static final WorldType SinBioSnowyWasteland = new WorldTypeSingleBiome("sbsnowas", ModBiomes.snowy_wasteland);
 	
-	public static final WorldType MulBioSandyWasteland = new WorldTypeMulti("mbsanwas");
+	public static final WorldType MulBioSandyWasteland = new WorldTypeMultiWastelandSandy("mbsanwas");
 }

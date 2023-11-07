@@ -8,11 +8,11 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.layer.GenLayer;
 
-public class WorldTypeMulti extends WorldType {
+public class WorldTypeMultiWastelandSandy extends WorldType {
 	private Biome[] allowedBiomes = {
 			ModBiomes.sandy_wasteland, ModBiomes.glass_wasteland, ModBiomes.sandy_wasteland_hills
 			};
-	public WorldTypeMulti(String name) {
+	public WorldTypeMultiWastelandSandy(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
