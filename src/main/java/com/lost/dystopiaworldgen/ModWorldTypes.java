@@ -13,5 +13,5 @@ public class ModWorldTypes {
 	
 	//multi biome world types
 		public static final WorldType MulBioSandyWasteland = new WorldTypeMultiWastelandSandy("mbsanwas");
-		public static final WorldType MulBioSnowWasteland = new WorldTypeMultiWastelandSnow("mbsnowas")
+		public static final WorldType MulBioSnowWasteland = new WorldTypeMultiWastelandSnow("mbsnowas");
 }
