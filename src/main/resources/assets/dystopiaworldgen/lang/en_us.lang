@@ -1,3 +1,6 @@
 #worldgen
 generator.sbsanwas=Sand Wasteland
 generator.sbsnowas=Snow Wasteland
+
+#fluids
+fluid.conwater=Contaminated Water
