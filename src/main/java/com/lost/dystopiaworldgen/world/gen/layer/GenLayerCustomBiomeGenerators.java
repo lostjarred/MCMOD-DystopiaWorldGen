@@ -52,6 +52,8 @@ public class GenLayerCustomBiomeGenerators {
             biomesize = chunkgensetttings.biomeSize;
             riversize = chunkgensetttings.riverSize;
         }
+        
+        biomesize = 6;
 
         GenLayer lvt_7_1_ = GenLayerZoom.magnify(1000L, genlayer4, 0);
         GenLayer genlayerriverinit = new GenLayerRiverInit(100L, lvt_7_1_);
