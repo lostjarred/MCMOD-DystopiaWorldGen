@@ -1,6 +1,11 @@
 #worldgen
+#single Biome
 generator.sbsanwas=Sand Wasteland
 generator.sbsnowas=Snow Wasteland
+
+#multi biome
+generator.mbsanwas=Sand Wasteland
+generator.mbsnowas=Snow Wasteland
 
 #fluids
 fluid.conwater=Contaminated Water

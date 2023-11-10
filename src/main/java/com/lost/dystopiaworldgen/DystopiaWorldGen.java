@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +40,7 @@ public class DystopiaWorldGen {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		ModBiomes.initBiomeManagerDictionary();
+		MinecraftForge.TERRAIN_GEN_BUS.register(new EventHandlerTerrain());
 	}
 	
 	@Mod.EventHandler
