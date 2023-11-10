@@ -21,7 +21,7 @@ import net.minecraft.world.gen.layer.GenLayerSmooth;
 import net.minecraft.world.gen.layer.GenLayerVoronoiZoom;
 import net.minecraft.world.gen.layer.GenLayerZoom;
 
-public class GenLayerCustom {
+public class GenLayerCustomBiomeGenerators {
 	
 	public static GenLayer[] initializeAllBiomeGenerators(long seed, WorldType worldtypein, ChunkGeneratorSettings chunkgensetttings)
     {

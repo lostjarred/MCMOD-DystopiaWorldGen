@@ -1,6 +1,6 @@
 package com.lost.dystopiaworldgen;
 
-import com.lost.dystopiaworldgen.world.gen.layer.GenLayerCustom;
+import com.lost.dystopiaworldgen.world.gen.layer.GenLayerCustomBiomeGenerators;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.gen.feature.WorldGenLakes;
@@ -28,7 +28,7 @@ public class EventHandlerTerrain {
 	@SubscribeEvent
 	public void onevent(WorldTypeEvent.InitBiomeGens event) {
 		if (event.getWorldType() == ModWorldTypes.MulBioSandyWasteland || event.getWorldType() == ModWorldTypes.MulBioSnowWasteland) {
-			event.setNewBiomeGens(GenLayerCustom.initializeAllBiomeGenerators(event.getSeed(), event.getWorldType(), null));
+			event.setNewBiomeGens(GenLayerCustomBiomeGenerators.initializeAllBiomeGenerators(event.getSeed(), event.getWorldType(), null));
 		}
 	}
 	
