@@ -7,6 +7,8 @@ import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.ChunkGeneratorSettings;
 import net.minecraft.world.gen.layer.GenLayer;
+import net.minecraft.world.gen.layer.GenLayerBiomeEdge;
+import net.minecraft.world.gen.layer.GenLayerZoom;
 
 public class WorldTypeMultiWastelandSandy extends WorldType {
 	private Biome[] allowedBiomes = {
@@ -19,6 +21,9 @@ public class WorldTypeMultiWastelandSandy extends WorldType {
 	
 	@Override
 	public GenLayer getBiomeLayer(long worldSeed, GenLayer parentLayer, ChunkGeneratorSettings chunkSettings) {
-		return new GenLayerBiomeCustom(worldSeed, allowedBiomes);
+		GenLayer biomelayer = new GenLayerBiomeCustom(worldSeed, allowedBiomes);
+		biomelayer = GenLayerZoom.magnify(1000L, biomelayer, 2);
+		biomelayer = new GenLayerBiomeEdge(1000L, biomelayer);
+		return biomelayer;
 	}
 }
