@@ -16,6 +16,7 @@ public class BlockFluidContainWater extends BlockFluidCustom {
 	public BlockFluidContainWater(Fluid fluid, Material material) {
 		super(fluid, material);
 		// TODO Auto-generated constructor stub
+		this.canCreateSources = true;
 	}
 	
 	@Override
