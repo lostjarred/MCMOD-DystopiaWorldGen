@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class DystopiaWorldGen {
 	public static final String MODID = "dystopiaworldgen";
 	public static final String NAME = "Dystopia World Gen";
-	public static final String VERSION = "0.1.1";
+	public static final String VERSION = "0.1.2";
 	
 	public static final ModWorldTypes worldtypes = new ModWorldTypes();
 	
