@@ -6,13 +6,14 @@ import com.lost.dystopiaworldgen.block.BlockFluidCustom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
 	
 	public static BlockFluidContainWater containmentedwaterfluidblock = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
-	public static BlockBase glass = new BlockBase(Material.GLASS, "glass");
+	public static BlockBase glass = new BlockBase(Material.GLASS, "glass").setCreativeTab(CreativeTabs.MATERIALS);
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		System.out.println("Registering Blocks");
