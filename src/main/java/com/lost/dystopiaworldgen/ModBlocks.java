@@ -15,8 +15,8 @@ public class ModBlocks {
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		System.out.println("Registering Blocks");
-		registry.register(CONTAINMENTEDWATERBLOCK);
 		registry.register(DGLASS);
+		registry.register(CONTAINMENTEDWATERBLOCK);
 	}
 	
 	public static void registeritemblock(IForgeRegistry<Item> registry) {

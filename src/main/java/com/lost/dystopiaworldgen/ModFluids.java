@@ -6,7 +6,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidRegistry;
 
 public class ModFluids {
-	public static ModFluid contaminated_water = new ModFluid(
+	public static final ModFluid contaminated_water = new ModFluid(
 			"conwater", 
 			new ResourceLocation("dystopiaworldgen", "blocks/conwater_still"), 
 			new ResourceLocation("dystopiaworldgen", "blocks/conwater_flow")
