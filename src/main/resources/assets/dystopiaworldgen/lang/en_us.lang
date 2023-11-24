@@ -9,3 +9,6 @@ generator.mbsnowas=Snow Wasteland
 
 #fluids
 fluid.conwater=Contaminated Water
+
+#blocks
+tile.dglass.name=Frosted Glass
