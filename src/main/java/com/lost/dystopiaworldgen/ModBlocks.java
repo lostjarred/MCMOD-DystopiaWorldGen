@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static BlockFluidContainWater CONTAINMENTEDWATERBLOCK = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
+	public static final BlockFluidContainWater CONTAINMENTEDWATERBLOCK = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
 	public static final BlockBase DGLASS = new BlockBase(Material.GLASS, "dglass").setCreativeTab(CreativeTabs.MATERIALS);
 	
 	public static void register(IForgeRegistry<Block> registry) {
