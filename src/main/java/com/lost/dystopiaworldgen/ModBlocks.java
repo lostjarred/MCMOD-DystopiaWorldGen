@@ -2,6 +2,7 @@ package com.lost.dystopiaworldgen;
 
 import com.lost.dystopiaworldgen.block.BlockBase;
 import com.lost.dystopiaworldgen.block.BlockFluidContainWater;
+import com.lost.dystopiaworldgen.block.BlockGlass;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +12,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
 	public static final BlockFluidContainWater CONTAINMENTEDWATERBLOCK = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
-	public static final BlockBase DGLASS = new BlockBase(Material.GLASS, "dglass").setCreativeTab(CreativeTabs.MATERIALS);
+	public static final BlockGlass DGLASS = new BlockGlass(Material.GLASS, "dglass").setCreativeTab(CreativeTabs.MATERIALS);
 	
 	public static void register(IForgeRegistry<Block> registry) {
 		System.out.println("Registering Blocks");
