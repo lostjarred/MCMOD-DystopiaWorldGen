@@ -2,7 +2,6 @@ package com.lost.dystopiaworldgen;
 
 import com.lost.dystopiaworldgen.block.BlockBase;
 import com.lost.dystopiaworldgen.block.BlockFluidContainWater;
-import com.lost.dystopiaworldgen.block.BlockFluidCustom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
