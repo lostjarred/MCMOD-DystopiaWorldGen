@@ -19,7 +19,7 @@ public class EventHandlerTerrain {
 				int blockposz = (event.getChunkZ() * 16) + 8;
 				int blockposy = 256;
 				//System.out.println(">>>> a lake generation event has occured and I have found it " + blockposx + " " + blockposy + " "+ blockposz);
-				(new WorldGenLakes(ModBlocks.containmentedwaterfluidblock)).generate(event.getWorld(), event.getRand(), new BlockPos(blockposx, blockposy, blockposz));
+				(new WorldGenLakes(ModBlocks.CONTAINMENTEDWATERBLOCK)).generate(event.getWorld(), event.getRand(), new BlockPos(blockposx, blockposy, blockposz));
 				event.setResult(Event.Result.DENY);
 			}
 		}

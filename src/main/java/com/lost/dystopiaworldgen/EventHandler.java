@@ -19,7 +19,7 @@ public class EventHandler {
 				for (int z = 0; z < 16; z++) {
 					for (int y = pchunk.getHeightValue(x, z) - 20; y < pchunk.getHeightValue(x, z) + 1; y++) {
 						if (pchunk.getBlockState(x, y, z).getBlock() == Blocks.WATER) {
-							pchunk.setBlockState(new BlockPos(x, y, z), ModBlocks.containmentedwaterfluidblock.getDefaultState());
+							pchunk.setBlockState(new BlockPos(x, y, z), ModBlocks.CONTAINMENTEDWATERBLOCK.getDefaultState());
 						}
 					}
 				}
