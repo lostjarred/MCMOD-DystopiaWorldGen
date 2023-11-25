@@ -22,7 +22,7 @@ public class DystopiaWorldGen {
 	public static final String NAME = "Dystopia World Gen";
 	public static final String VERSION = "0.1.2";
 	
-	public static final ModWorldTypes worldtypes = new ModWorldTypes();
+	public static ModWorldTypes worldtypes;
 	
 	static {
 		FluidRegistry.enableUniversalBucket();
@@ -41,6 +41,7 @@ public class DystopiaWorldGen {
 	public void init(FMLInitializationEvent event) {
 		ModBiomes.initBiomeManagerDictionary();
 		MinecraftForge.TERRAIN_GEN_BUS.register(new EventHandlerTerrain());
+		worldtypes = new ModWorldTypes();
 	}
 	
 	@Mod.EventHandler
