@@ -11,10 +11,13 @@ import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModBlocks {
-	public static final BlockFluidContainWater CONTAINMENTEDWATERBLOCK = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
-	public static final BlockGlass DGLASS = new BlockGlass(Material.GLASS, "dglass").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockFluidContainWater CONTAINMENTEDWATERBLOCK;
+	public static BlockGlass DGLASS;
 	
 	public static void register(IForgeRegistry<Block> registry) {
+		CONTAINMENTEDWATERBLOCK = new BlockFluidContainWater(ModFluids.contaminated_water, ModMaterials.Containainedwater);
+		DGLASS = new BlockGlass(Material.GLASS, "dglass").setCreativeTab(CreativeTabs.MATERIALS);
+		
 		System.out.println("Registering Blocks");
 		registry.register(DGLASS);
 		registry.register(CONTAINMENTEDWATERBLOCK);
