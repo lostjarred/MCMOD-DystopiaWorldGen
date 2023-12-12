@@ -32,6 +32,15 @@ public class WorldGenGlassSpike extends WorldGenerator {
 			
 			for (int x = 0; x < width; x++ ) {
 				for (int z = 0; z < depth; z++ ) {
+					int ycheck = -1;
+					while (worldIn.getBlockState( new BlockPos(x, (by - ycheck), z) ).getBlock() == Blocks.AIR) {
+						if ( (by - ycheck) > 0) {
+							this.setBlockAndNotifyAdequately(worldIn, new BlockPos(bx, (by - ycheck), bz), ModBlocks.DGLASS.getDefaultState());
+							ycheck -- ;
+						} else {
+							break;
+						}
+					}
 					for (int y = 0; y < (rand.nextInt(height) + 3); y++) {
 						this.setBlockAndNotifyAdequately(worldIn, new BlockPos((bx + x), (by + y), (bz + z)), ModBlocks.DGLASS.getDefaultState() );
 					}
