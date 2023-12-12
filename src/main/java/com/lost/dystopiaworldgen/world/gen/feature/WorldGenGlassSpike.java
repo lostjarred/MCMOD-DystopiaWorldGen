@@ -20,7 +20,7 @@ public class WorldGenGlassSpike extends WorldGenerator {
 
 			int height = rand.nextInt(5) + 7;
 			int width = rand.nextInt(3) + 4;
-			int depth = rand.nextInt(3) + 4;
+			int depth = width;
 
 		if ( checkArea(worldIn, position, width, depth) ) {
 			return false;
