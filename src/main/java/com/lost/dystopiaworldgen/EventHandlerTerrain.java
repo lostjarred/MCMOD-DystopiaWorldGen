@@ -12,13 +12,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EventHandlerTerrain {
 	@SubscribeEvent
 	public void onEvent(PopulateChunkEvent.Populate event) {
-		//System.out.println(">>>> a populate event has occured and I have found it");
 		if (event.getWorld().getWorldType() == ModWorldTypes.MulBioSandyWasteland || event.getWorld().getWorldType() == ModWorldTypes.MulBioSnowWasteland) {
 			if (event.getType() == PopulateChunkEvent.Populate.EventType.LAKE) {
 				int blockposx = (event.getChunkX() * 16) + 8;
 				int blockposz = (event.getChunkZ() * 16) + 8;
 				int blockposy = 256;
-				//System.out.println(">>>> a lake generation event has occured and I have found it " + blockposx + " " + blockposy + " "+ blockposz);
 				(new WorldGenLakes(ModBlocks.CONTAINMENTEDWATERBLOCK)).generate(event.getWorld(), event.getRand(), new BlockPos(blockposx, blockposy, blockposz));
 				event.setResult(Event.Result.DENY);
 			}
