@@ -17,14 +17,16 @@ public class WorldGenGlassSpike extends WorldGenerator {
 		while (worldIn.isAirBlock(position) && position.getY() > 2) {
 			position = position.down();
 		}
-		
-		if (worldIn.getBlockState(position).getBlock() != Blocks.SAND) { 
+
+			int height = rand.nextInt(5) + 7;
+			int width = rand.nextInt(3) + 4;
+			int depth = rand.nextInt(3) + 4;
+
+		if ( checkArea(worldIn, position, width, depth) ) {
 			return false;
 		} else {
 			
-			int height = rand.nextInt(5) + 7;
-			int width = rand.nextInt(3) + 1;
-			int depth = rand.nextInt(3) + 1;
+
 			
 			int bx = position.getX();
 			int by = position.getY();
@@ -32,15 +34,6 @@ public class WorldGenGlassSpike extends WorldGenerator {
 			
 			for (int x = 0; x < width; x++ ) {
 				for (int z = 0; z < depth; z++ ) {
-					int ycheck = -1;
-					while (worldIn.getBlockState( new BlockPos(x, (by - ycheck), z) ).getBlock() == Blocks.AIR) {
-						if ( (by - ycheck) > 0) {
-							this.setBlockAndNotifyAdequately(worldIn, new BlockPos(bx, (by - ycheck), bz), ModBlocks.DGLASS.getDefaultState());
-							ycheck -- ;
-						} else {
-							break;
-						}
-					}
 					for (int y = 0; y < (rand.nextInt(height) + 3); y++) {
 						this.setBlockAndNotifyAdequately(worldIn, new BlockPos((bx + x), (by + y), (bz + z)), ModBlocks.DGLASS.getDefaultState() );
 					}
@@ -49,5 +42,16 @@ public class WorldGenGlassSpike extends WorldGenerator {
 			return true;
 		}
 	}
-
+	public boolean checkArea(World worldIn, BlockPos position, int sizex, int sizez) {
+		BlockPos checkblockpos = position.down();
+		for (int x = 0; x < sizex; x ++) {
+			for (int z = 0; z < sizez; z ++) {
+				checkblockpos.add(x, 0, z);
+				if (worldIn.getBlockState(checkblockpos).getBlock() != Blocks.SAND) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 }
